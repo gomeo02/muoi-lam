@@ -1,29 +1,30 @@
-[workspace]
-resolver = "2" # What does this do?
+---
+###########################
+###########################
+## Markdown Linter rules ##
+###########################
+###########################
 
-[package]
-name = "vger"
-description = "2D GPU renderer for dynamic UIs"
-version = "0.2.7"
-license = "MIT"
-readme = "README.md"
-authors = ["Taylor Holliday <taylor@audulus.com>"]
-keywords = ["graphics", "canvas", "vector", "drawing", "gpu"]
-categories = ["graphics"]
-repository = "https://github.com/audulus/vger-rs"
-edition = "2018"
+# Linter rules doc:
+# - https://github.com/DavidAnson/markdownlint
+#
+# Note:
+# To comment out a single error:
+#   <!-- markdownlint-disable -->
+#   any violations you want
+#   <!-- markdownlint-restore -->
+#
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+###############
+# Rules by id #
+###############
+# MD013:
+#  line_length: 120
 
-[dependencies]
-wgpu = "0.17.0"
-euclid = "0.22.7"
-fontdue = "0.7.2"
-rect_packer = "0.2.1"
-
-[dev-dependencies]
-png = "0.17.6"
-futures = "0.3"
-futures-intrusive = "0.5"
-svg = "0.13.1"
-rand = "0.8.5"
+#################
+# Rules by tags #
+#################
+# blank_lines: false  # Error on blank lines
+line_length: false # Ignore excessively long lines
+no-duplicate-heading: false # This is useful in RELEASES.md
+no-inline-html: false # Needed to create complex tables
