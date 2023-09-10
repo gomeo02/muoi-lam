@@ -1,5 +1,4 @@
 
-[]
 {
   "compilerOptions": {
     "target": "es2018",
