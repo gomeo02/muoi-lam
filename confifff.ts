@@ -1,4 +1,3 @@
-
 {
   "compilerOptions": {
     "target": "es2018",
@@ -21,4 +20,4 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   }
-}
+
